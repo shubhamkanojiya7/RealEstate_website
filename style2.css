@@ -1,0 +1,338 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0px; 
+	margin: 0px;
+	font-family: Verdana,sans-serif;
+
+}
+
+#cover
+{
+	position: relative;
+}
+
+.wallaper
+{
+	position: relative;
+}
+
+.wallpaper img
+{
+	width: 100%;
+}
+
+nav
+{
+	position: fixed;
+	z-index:999;
+	top: 0;
+	margin: 0px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 17px;
+	background-color: white;
+	box-shadow: 0 0 10px 0 grey;
+}
+ul
+{
+	padding-top: 5px;
+	text-align:right;
+}
+
+li
+{
+	display: inline;
+
+}
+li a
+{
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 10px; 
+	font-size: 18px;
+	letter-spacing: 5px;
+	padding-left: 20px; 
+	margin-right: 20px;
+}
+.logo
+{
+	float:left;
+}
+
+	/*For wallpaper , navbar middle text */
+
+@media screen and (max-width: 700px)
+{
+	.nav_hide
+	{
+		display: none;
+	}
+
+	.architects
+	{
+		display: none;
+	}
+
+	.br
+	{
+		transform: translate(-50% , -50%);
+	}
+}
+
+.text
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size: 50px;
+	transform: translate(-50% ,-50%);
+}
+.hj
+{
+	opacity: 0.7;
+	padding:8px 18px;
+	background-color: black;
+}
+
+li a:hover
+{
+	background-color: lightgrey;
+	 
+}
+
+	/*peoject*/
+#projects
+{
+	padding-top: 70px; 
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#projects .title
+{
+	font-size: 25px;
+	padding-bottom: 25px;
+}
+
+hr
+{
+	opacity: 0.3;
+	padding-right: 10px;	
+}
+
+.container
+{
+	padding-top: 50px;
+	width: 25%;
+	float: left;
+	padding-right:20px;
+}
+
+.container .gallery img
+{
+	width: 100%;
+	height: auto;
+}
+
+.container .gallery 
+{
+	position: relative;
+}
+
+
+.text-on-image
+{
+	background-color: black;
+	color: white;
+	padding:10px 20px;
+	font-size: 17px; 
+	position: absolute;
+	top:0;
+	left:0; 
+}
+
+	/*For image gallery*/
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 49.99999%;
+    margin: 6px 0;
+    
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 100%;
+   
+  }
+}
+	
+	/*About us */
+.error
+{
+	visibility: hidden;
+}
+#about
+{
+	padding-top: 70px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#about .about-title
+{
+	font-size: 25px;
+/*	margin-top: 70px;*/
+	padding-bottom: 25px;
+}
+
+#about .about-content
+{
+	line-height: 1.4;
+	font-size:17px;
+	margin-top: 15px;
+}
+
+#about img
+{
+	filter: grayscale(80%);
+}
+
+#about .gallery
+{
+	position: relative;
+	width: 100%;
+}
+
+#about .overlay
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	width: 100%;
+	opacity: 0;
+	transition:.5s;
+}
+
+#about .overlay:hover 
+{
+	opacity: 0.8;
+}
+
+.overlay .names_on_image
+{
+	background-color: black;
+	color: white;
+	padding:7px 13px;
+	font-size: 25px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50% , -50%); 
+}
+
+.desc
+{
+	font-size: 25px;
+	padding: 15px 0;
+}
+
+.desc .post
+{	
+
+	font-size: 17px;
+	color: grey;
+	padding: 20px 0;
+}
+
+.desc .intro
+{
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.desc .btn-contact
+{
+	border:none;
+	width: 100%;
+	padding:10px; 
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.desc .btn-contact:hover
+{
+	background-color: lightgrey;
+}
+
+
+	/*Contact Form*/
+
+#contact
+{
+	padding-top: 70px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#contact .contact-title
+{
+	font-size: 25px;
+	/*margin-top: 15px*/;
+	padding-bottom: 25px;
+}
+
+#contact .contact-heading
+{
+	margin-top:15px;
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+input[type=text]
+{
+	font-size: 17px;
+	padding:10px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+form .submit-form
+{
+	margin-top: 20px;
+	border:none;
+	padding:10px 15px;
+	color: white;
+	background-color: black;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+form .submit-form:hover
+{
+	background-color: grey;
+	color: black;
+}
+
+.map img
+{ 
+	margin-top: 50px; 
+	width: 100%;
+}
+
+	/*Footer*/
+footer
+{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	padding:40px;
+	background-color: black;
+	color: white; 
+}
